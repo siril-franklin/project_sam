@@ -1,4 +1,3 @@
-// demo items for preview; replace with backend fetch if needed
 const sampleItems = [
   {
     name: "Black Samsung Phone",
