@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Found Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <img src="assets/ssam.png" alt="Chathiram Bus Stand" class="landscape-image">
+    <h1 class="main-title">Report Found Item</h1>
+  </header>
+  <div class="container">
+    <form id="found-form" class="form" enctype="multipart/form-data">
+      <input type="text" name="itemName" placeholder="Item Name" required>
+      <select name="category" required>
+        <option value="">Category</option>
+        <option>Electronics</option>
+        <option>Clothing</option>
+        <option>Documents</option>
+        <option>Keys</option>
+        <option>Jewelry</option>
+        <option>Books</option>
+        <option>Other</option>
+      </select>
+      <textarea name="description" placeholder="Description" required></textarea>
+      <input type="text" name="location" placeholder="Location Found" required>
+      <input type="date" name="foundDate" required>
+      <input type="text" name="contactName" placeholder="Your Name" required>
+      <input type="text" name="contactInfo" placeholder="Phone or Email" required>
+      <textarea name="notes" placeholder="Additional Notes"></textarea>
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit" class="btn submit-btn">Report Found Item</button>
+      <p id="found-success" class="success hidden">Item submitted successfully!</p>
+    </form>
+    <h2>Reported Found Items</h2>
+    <div id="found-items" class="items-grid"></div>
+  </div>
+  <script src="found.js"></script>
+</body>
+</html>
